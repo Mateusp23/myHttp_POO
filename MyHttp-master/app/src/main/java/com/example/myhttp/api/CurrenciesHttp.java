@@ -5,7 +5,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
 
-import com.example.myhttp.domain.Currencies;
+import com.example.myhttp.model.Currencies;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 public class CurrenciesHttp {
 
-    public static String URL="https://api.hgbrasil.com/finance/quotations?format=json&key=4aaa9ac3";
+    public static String URL="https://api.hgbrasil.com/finance/";
 
     private  static HttpURLConnection conectar(String urlWeb){
         final  int SEGUNDOS =10000;

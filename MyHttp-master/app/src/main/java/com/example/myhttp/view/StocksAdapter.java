@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.myhttp.R;
-import com.example.myhttp.domain.Stocks;
+import com.example.myhttp.model.Stocks;
 
 import java.util.List;
 

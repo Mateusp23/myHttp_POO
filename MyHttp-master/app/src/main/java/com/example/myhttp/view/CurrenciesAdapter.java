@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.myhttp.domain.Currencies;
+import com.example.myhttp.model.Currencies;
 import com.example.myhttp.R;
 
 import java.util.List;

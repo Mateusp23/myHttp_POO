@@ -8,9 +8,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.myhttp.domain.Currencies;
+import com.example.myhttp.model.Currencies;
 import com.example.myhttp.R;
-import com.example.myhttp.domain.Stocks;
+import com.example.myhttp.model.Stocks;
 import com.example.myhttp.api.CurrenciesHttp;
 import com.example.myhttp.api.StocksHttp;
 
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             if (CurrenciesHttp.hasConexao(this)|| StocksHttp.hasConexao(this)){
                 start();
             }else{
-                Toast.makeText(getApplicationContext(),"Erro a buscar",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Erro a buscar!!",Toast.LENGTH_SHORT).show();
             }
         }else if(mTask.getStatus()==AsyncTask.Status.RUNNING||mStocksTask.getStatus()==AsyncTask.Status.RUNNING){
             Toast.makeText(getApplicationContext(),"....",Toast.LENGTH_SHORT).show();
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 mCurrencies.addAll(currencies);
                 mAdapter.notifyDataSetChanged();
             }else{
-                Toast.makeText(getApplicationContext(),"Buscando", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Buscando API", Toast.LENGTH_LONG).show();
             }
         }
     }
